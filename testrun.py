@@ -121,18 +121,20 @@ def plot_images(color, grayscale,predicted):
     plt.imshow(predicted)
 
     plt.show()
-#
-# showimg_c = cv2.imread("img3_c.jpg")
-# img_c = cv2.cvtColor(img_c, cv2.COLOR_BGR2RGB)
-# img_c = cv2.resize(img_c, (SIZE, SIZE))
-# img_c = img.astype('float32')
-# img_c = img_to_array(img_c)
-# img_g = cv2.imread("img3_g.jpeg")
-# img_g = cv2.resize(img_g, (SIZE, SIZE))
-# img_g = img.astype('float32')
-# img_g = img_to_array(img_g)
-# predicted = np.clip(model.predict(img_g.reshape(1,SIZE, SIZE,3)),0.0,1.0).reshape(SIZE, SIZE,3)
-# plot_images(img_g,predicted)
-for i in range(50,58):
-    predicted = np.clip(model.predict(test_gray_image[i].reshape(1,SIZE, SIZE,3)),0.0,1.0).reshape(SIZE, SIZE,3)
-    plot_images(test_color_image[i],test_gray_image[i],predicted)
+
+showimg_c = cv2.imread("img_c.jpg")
+img_c = cv2.cvtColor(img_c, cv2.COLOR_BGR2RGB)
+img_c = cv2.resize(img_c, (SIZE, SIZE))
+img_c = img.astype('float32')
+img_c = img_to_array(img_c)
+img_g = cv2.imread("img_g.jpeg")
+img_g = cv2.resize(img_g, (SIZE, SIZE))
+img_g = img.astype('float32')
+img_g = img_to_array(img_g)
+predicted = np.clip(model.predict(img_g.reshape(1,SIZE, SIZE,3)),0.0,1.0).reshape(SIZE, SIZE,3)
+plot_images(img_g,predicted)
+
+
+# for i in range(50,58):
+#     predicted = np.clip(model.predict(test_gray_image[i].reshape(1,SIZE, SIZE,3)),0.0,1.0).reshape(SIZE, SIZE,3)
+#     plot_images(test_color_image[i],test_gray_image[i],predicted)
