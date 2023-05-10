@@ -9,7 +9,8 @@ ColorVAE is a Variational Auto Encoder (V.A.E.) which can be used to add colours
 ``` python testrun.py ```
 
 The result for me looked something like this:
-<!-- ![alt text for screen readers](/path/to/image.png "Text to show on mouseover") -->
+
+![Sample Result](result.png "Sample Result")
 
 This project was trained solely on landscape images dataset due to hardware limitations and thus currently works well for landscape images. Therefore, I plan on improving this project with time by using transfer learning on the pre-trained model using various datasets and fine tuning the training for each respective dataset. 
 
