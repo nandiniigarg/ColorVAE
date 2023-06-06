@@ -1,6 +1,6 @@
 # ColorVAE
 
-ColorVAE is a Variational Auto Encoder (V.A.E.) which can be used to add colours to black and white images. The model was trained using 7,129 landscape images of dimensions (160,160,3). If you want to try out the model yourself, feel free to email me and I can share the training weights directly. To test the model, simply follow these three steps:
+ColorVAE is a Vanilla Auto Encoder (V.A.E.) which can be used to add colours to black and white images. The model was trained using 7,129 landscape images of dimensions (160,160,3). If you want to try out the model yourself, feel free to email me and I can share the training weights directly. To test the model, simply follow these three steps:
 
 1. Clone this repository in your IDE of choice using:
 ``` git clone https://github.com/nandiniigarg/ColorVAE/ ```
